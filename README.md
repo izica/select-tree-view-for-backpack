@@ -1,8 +1,7 @@
 ## Laravel Backpack Select tree view
 
 1. [Installation](#installation)
-2. [Documentation](#documentation)
-3. [Usage](#usage)
+2. [Usage](#usage)
 
 ![Alt text](screenshots/screenshot.png?raw=true "screenshot")
 
@@ -11,40 +10,6 @@
 ```
 composer require izica/select-tree-view-for-backpack
 ```
-
-### Documentation
-
-* relation_panel
-    * `name` - name of relation
-    * `label` - panel label
-    * `backpack_crud` - backpack crud url,
-    * `buttons` (optional) - set `false` to hide all action buttons
-    * `button_show` (optional) - set `false` to hide
-    * `button_edit` (optional) - set `false` to hide
-    * `visible` (optional) - closure for hiding or showing panel
-    * `fields` (optional) - fields array, by default get columns from `fillable` in model
-        * `name` - name
-        * `label` - for field
-        * `closure` - use closure instead of name field,
-        * `visible`(optional) - closure for hiding or showing panel
-
-* relation_table
-    * `name` - (required) name of relation
-    * `label` - panel label
-    * `relation_attribute` - (optional) used for passing url parameter name for button_create
-    * `search` - (optional) `closure`, enables search input
-    * `per_page` - (optional) enables pagination, `null` by default
-    * `backpack_crud` - backpack crud url,
-    * `buttons` (optional) - set `false` to hide all action buttons
-    * `button_create` (optional) - set `false` to hide
-    * `button_show` (optional) - set `false` to hide
-    * `button_edit` (optional) - set `false` to hide
-    * `button_delete` (optional) - set `false` to hide
-    * `visible` (optional) - `closure` for hiding or showing panel
-    * `columns` (optional) - columns `array`, by default get columns from `fillable` in model
-        * `name` - name
-        * `label` - for field
-        * `closure` - use `closure` instead of name field for passing value,
 
 ### Usage
 
