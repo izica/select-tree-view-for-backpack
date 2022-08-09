@@ -73,7 +73,9 @@ protected function setupCreateOperation()
         'type'              => 'select_tree_view',
         'label'             => "Catalog category",
         'name'              => 'catalog_category_id',
-        // with preventing loops on itself
+        // in product view
+        'options'           => CatalogCategory::whereNot('id', $this->crud->getCurrentEntryId())->get()->toArray(),
+        // in category view, with preventing loops on itself
         'options'           => CatalogCategory::whereNot('id', $this->crud->getCurrentEntryId())->get()->toArray(),
    
         // OPTIONAL
