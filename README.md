@@ -74,7 +74,7 @@ protected function setupCreateOperation()
         'label'             => "Catalog category",
         'name'              => 'catalog_category_id',
         // in product view
-        'options'           => CatalogCategory::whereNot('id', $this->crud->getCurrentEntryId())->get()->toArray(),
+        'options'           => CatalogCategory::get()->toArray(),
         // in category view, with preventing loops on itself
         'options'           => CatalogCategory::whereNot('id', $this->crud->getCurrentEntryId())->get()->toArray(),
    
