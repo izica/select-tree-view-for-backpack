@@ -35,12 +35,16 @@ catalog-product
 protected function setupCreateOperation()
 {
      CRUD::addField([
+        'view_namespace'    => 'izica::fields', // don't modify this field
+        
+        // REQUIRED
         'type'              => 'select_tree_view',
         'label'             => "Catalog category",
         'name'              => 'catalog_category_id',
+        
         // in product view
         'options'           => CatalogCategory::get()->toArray(),
-        // in category view, with preventing loops on itself
+        // or in category view, with preventing loops on itself
         'options'           => CatalogCategory::whereNot('id', $this->crud->getCurrentEntryId())->get()->toArray(),
    
         // OPTIONAL

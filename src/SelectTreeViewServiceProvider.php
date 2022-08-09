@@ -13,6 +13,6 @@ class SelectTreeViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(realpath(__DIR__.'/resources/views'), 'backpack');
+        $this->loadViewsFrom(realpath(__DIR__.'/resources/views'), 'izica');
     }
 }
