@@ -86,7 +86,7 @@ protected function setupCreateOperation()
         'options_sort_by'   => 'name',                  //default value
         'option_name'       => 'name',                  //default value
         'allows_null'       => true,                    //default value
-        'default'           => null,                     //default value
+        'default'           => null,                    //default value
     ]);
 }
 
