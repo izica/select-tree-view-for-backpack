@@ -1,0 +1,41 @@
+{
+    "name": "izica/select-tree-view-for-backpack",
+    "description": "Select tree view",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artyom Golovarchuk",
+            "email": "artemiztomska@gmail.com",
+            "homepage": "https://github.com/izica/select-tree-view-for-backpack"
+        }
+    ],
+    "homepage": "https://github.com/izica/select-tree-view-for-backpack",
+    "keywords": [
+        "Laravel",
+        "Backpack",
+        "Laravel backpack",
+        "Backpack for Laravel",
+        "Addon",
+        "Plugin",
+        "Admin Panel",
+        "Relations",
+        "Selete",
+        "Tree",
+        "Treeview"
+    ],
+    "require": {
+        "backpack/crud": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "izica\\RelationsWidgets\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "izica\\SelectTreeView\\SelectTreeViewServiceProvider"
+            ]
+        }
+    }
+}
