@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "izica\\RelationsWidgets\\": "src/"
+            "izica\\SelectTreeView\\": "src/"
         }
     },
     "extra": {
