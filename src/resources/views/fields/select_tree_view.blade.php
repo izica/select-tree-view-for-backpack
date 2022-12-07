@@ -43,7 +43,7 @@
     name="{{ $field['name'] }}"
     @include('crud::fields.inc.attributes')
 >
-    @if ($field['allows_null'] && !$field['multiple'])
+    @if ($field['allows_null'])
         <option value="">-</option>
     @endif
 
