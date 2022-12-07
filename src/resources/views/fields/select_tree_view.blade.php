@@ -8,7 +8,7 @@
     $field['option_name'] = $field['option_name'] ?? 'name';
     $field['options'] = $field['options'] ?? [];
     $field['depth_max'] = $field['depth_max'] ?? 10;
-    $field['depth_prefix'] = $field['depth_prefix'] ?? '.  ';
+    $field['depth_prefix'] = $field['depth_prefix'] ?? '.';
 
     $options = collect($field['options'])->filter(function ($item) use ($field) {
         return $item[$field['options_parent_id']] === $field['options_root_id'];
@@ -24,7 +24,7 @@
         $result = [];
         $prefix = str_repeat($field['depth_prefix'], $depth);
         foreach ($options as $option){
-            $name = $depth === 0 ? "<b>{$option[$field['option_name']]}</b>" : "{$prefix}{$option[$field['option_name']]}";
+            $name = $depth === 0 ? "<b>{$option[$field['option_name']]}</b>" : "{$prefix} {$option[$field['option_name']]}";
             $selected = (int)$field['value'] === (int)$option['id'] ? 'selected' : '';
             $result[] = "<option {$selected} value='{$option['id']}'>{$name}</option>";
 
