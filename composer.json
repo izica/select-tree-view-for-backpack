@@ -2,13 +2,6 @@
     "name": "izica/select-tree-view-for-backpack",
     "description": "Select tree view",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Artyom Golovarchuk",
-            "email": "artemiztomska@gmail.com",
-            "homepage": "https://github.com/izica/select-tree-view-for-backpack"
-        }
-    ],
     "homepage": "https://github.com/izica/select-tree-view-for-backpack",
     "keywords": [
         "Laravel",
